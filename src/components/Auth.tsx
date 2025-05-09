@@ -5,6 +5,7 @@ import { auth } from '@/lib/firebase';
 import { signInWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Auth() {
   const [email, setEmail] = useState('');
@@ -122,6 +123,9 @@ export default function Auth() {
             </button>
           </div>
         </form>
+        <div className='text-center w-full text-black'>
+          <Link href="/privacy"><p>Privacy Policy</p></Link>
+        </div>
       </div>
     </div>
   );
