@@ -1,5 +1,11 @@
 import Link from "next/link";
 import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | SeeSaw",
+  description: "SeeSaw Privacy Policy - Learn how we protect your data and privacy",
+};
 
 const PrivacyPolicy = () => {
   return (
